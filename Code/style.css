@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(/Assets/Design\ -\ home-page.png);
+}
+
+/* Library image (background) */
+.hero{
+    height: 64rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    background-color: brown;
+    background-image: url(/Assets/Books\ background.jpg);
+    background-size: cover;
+    background-position: center center; 
+}
+
+/* nav bar */
+.gm-nav-bar{
+    height: 6.5rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1.875rem;
+    opacity: 1;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(25px);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.archivox-logo{
+    padding-left: 4rem;
+}
+
+.nav-controls{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFA01B;
+    display: flex;
+    align-items: center;
+    padding-right: 4rem;
+    gap: 2rem;
+}
+.individial-nav-controls{
+    padd
+}
