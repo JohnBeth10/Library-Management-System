@@ -7,10 +7,9 @@ body{
 }
 
 /* Library image (background) */
-.hero{
+.library-img-bg{
     height: 64rem;
     width: 100%;
-    position: fixed;
     top: 0;
     z-index: -1;
     background-color: brown;
@@ -33,10 +32,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 5;
 }
 
 .archivox-logo{
     padding-left: 4rem;
+    cursor: pointer;
 }
 
 .nav-controls{
@@ -50,5 +51,94 @@ body{
     gap: 2rem;
 }
 .individial-nav-controls{
-    padd
+    cursor: pointer;
+    opacity: 0.8;
 }
+.individial-nav-controls:hover{
+    opacity: 1;
+    transform: scale(1.05);
+    transition: all 0.25s ease;
+}
+
+/* hero section */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glassmorphism-bg{
+    height: 625px;
+    width:75%;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 14rem;
+    border-radius: 1.875rem;
+    opacity: 1;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(25px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-headline{
+    margin-top: 9rem;
+}
+.hero-headline img{
+    height: 85px;
+}
+.hero-body{
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #FFA01B;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.get-started{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.get-started-text{
+    font-family: "Outfit", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #190801;
+    margin-top: 4rem;
+}
+.std-drp-dn-btn{
+    margin-top: 1.5rem;
+    appearance: none;
+    padding: 0.5rem;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FFA01B;
+    background-color: #190801;
+    width: 188px;
+    height: 58.3px;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.std-drp-dn-btn div{
+    padding-left: 1rem;
+}
+.std-drp-dn-btn img{
+    padding-left: 1rem;
+    margin-top: 0.1rem;
+}
+
+.std-drp-dn-btn:hover{
+    border: 0.12rem solid #FFA01B;
+    transition: all 0.35s;
+}
+.std-drp-dn-btn img:hover{
+    transform: scale(1.1);
+    transition: all 0.35s;
+}
+
