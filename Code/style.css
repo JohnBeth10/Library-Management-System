@@ -4,6 +4,8 @@
 }
 body{
     background-image: url(/Assets/Design\ -\ home-page.png);
+    background-size: cover;
+    background-position: center center;
 }
 
 /* Library image (background) */
@@ -140,5 +142,66 @@ body{
 .std-drp-dn-btn img:hover{
     transform: scale(1.1);
     transition: all 0.35s;
+}
+
+/* About Us */
+.about-us{
+
+}
+.about-us img{
+    margin: 12rem 4rem 4rem 5rem;
+}
+.about-us-content{
+    margin-left: 5rem;
+    width: 800px;
+    text-align: justify;
+}
+.about-us-content div{
+    margin-bottom: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+.about-us-content div span{
+    font-weight: 600;
+}
+#pt1{
+    margin-bottom: 0px;
+}
+.about-us-content-points{
+}
+.about-us-content-text{
+    margin-left: 5rem;
+    width: 800px;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+.about-us-content ul{
+    margin-left: 3rem;
+}
+.about-us-content ul li div{
+    margin-left: 1rem;
+}
+.about-us-mission{
+    margin-left: 5rem;
+    /* width: 800px; */
+    text-align: left;
+    margin-bottom: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+.about-us-mission span{
+    font-weight: 600;
+}
+.about-us-mission-txt1{
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+.about-us-mission-txt2{
+    font-weight: 600;
 }
 
