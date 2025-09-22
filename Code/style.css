@@ -26,6 +26,8 @@ body{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 1.875rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     opacity: 1;
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(25px);
@@ -71,11 +73,11 @@ body{
 .glassmorphism-bg{
     height: 625px;
     width:75%;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255,0.1);
     margin-top: 14rem;
     border-radius: 1.875rem;
     opacity: 1;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255,0.2);
     backdrop-filter: blur(25px);
     display: flex;
     flex-direction: column;
@@ -205,3 +207,17 @@ body{
     font-weight: 600;
 }
 
+/* Meet our team*/
+.meet-our-team{
+    margin: 10rem 4rem 4rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card{
+    width: 370px;
+    height: 600px;
+    /* background-color: #190801; */
+}
