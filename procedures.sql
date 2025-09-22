@@ -350,5 +350,15 @@ BEGIN
   UPDATE Borrow
   SET DueDate = DATE_ADD(v_due_date, INTERVAL 14 DAY)
   WHERE BorrowID = p_borrow_id;
+  SELECT CONCAT('Renewal successful. New due date: ', DATE_ADD(v_due_date, INTERVAL 14 DAY)) AS Message;
+  END$$
 
-  COMMIT;
+    DELIMITER ;
+
+COMMIT;
+
+
+
+
+
+
