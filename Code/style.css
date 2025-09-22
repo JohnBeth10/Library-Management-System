@@ -221,3 +221,7 @@ body{
     height: 600px;
     /* background-color: #190801; */
 }
+
+html{
+    background-color: red;
+}
