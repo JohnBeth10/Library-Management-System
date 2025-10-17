@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(/Assets/Design\ -\ home-page.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+/* nav bar */
+.gm-nav-bar{
+    height: 6.5rem;
+    width: 100%;
+    background-color: #190801;
+    border-radius: 1.875rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    opacity: 1;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(25px);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 50;
+}
+
+.archivox-logo{
+    padding-left: 4rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.archivox-logo:hover{
+    transform: scale(1.05);
+}
+
+.nav-controls{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFA01B;
+    display: flex;
+    align-items: center;
+    padding-right: 4rem;
+    gap: 2rem;
+}
+.individial-nav-controls{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.individial-nav-controls:hover{
+    opacity: 1;
+    transform: scale(1.05);
+    transition: all 0.25s ease;
+}
+
+/* hero */
+.dept-name img{
+    margin: 12rem 4rem 4rem 5rem;
+}
+
+/* books */
+.books-cards{
+    margin: 10rem 4rem 4rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.team-member-cards{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    row-gap: 0rem;
+}
+
+.card{
+    width: 444px; 
+    height: 720px; 
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.35s ease-in-out;
+}
+
+.photo-section{
+    width: 300px; 
+    height: 324px; 
+    margin-bottom: -4.8rem; 
+    z-index: 10;
+    border-radius: 30px;
+    border: 0.35rem solid transparent;
+    transition: all 0.15s ease-in-out;
+    
+}
+.card:hover .photo-section{
+    border: 0.35rem solid #FFA01B;
+
+}
+
+.details-section{
+    width: 444px; 
+    height: 498px;
+    background-color: #190801;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.text-name{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #FFA01B;
+    align-self: center;
+    margin-top: 5rem;
+    text-align: center;
+
+}
+.details-section-sub-heading{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #FFA01B;
+    align-self: center;
+    margin-top: 2rem;
+}
+.details-section-content{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    align-self: center;
+    text-align: justify;
+    -webkit-hyphens: auto; 
+    -ms-hyphens: auto;     
+    hyphens: auto;
+    width: 80%;
+    margin-top: 2.8rem;
+}

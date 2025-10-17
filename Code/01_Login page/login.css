@@ -1,0 +1,342 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(/Assets/Design\ -\ home-page.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Library image (background) */
+.library-img-bg{
+    height: 64rem;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    background-color: brown;
+    background-image: url(/Assets/Books\ background.jpg);
+    background-size: cover;
+    background-position: center center; 
+}
+
+/* nav bar */
+.gm-nav-bar{
+    height: 6.5rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1.875rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    opacity: 1;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(25px);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 50;
+}
+
+.archivox-logo{
+    padding-left: 4rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.archivox-logo:hover{
+    transform: scale(1.05);
+}
+
+.nav-controls{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFA01B;
+    display: flex;
+    align-items: center;
+    padding-right: 4rem;
+    gap: 2rem;
+}
+.individial-nav-controls{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.individial-nav-controls:hover{
+    opacity: 1;
+    transform: scale(1.05);
+    transition: all 0.25s ease;
+}
+
+/* hero section */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glassmorphism-bg{
+    height: 625px;
+    width:75%;
+    background-color: rgba(255, 255, 255,0.1);
+    margin-top: 14rem;
+    border-radius: 1.875rem;
+    opacity: 1;
+    border: 1px solid rgba(255, 255, 255,0.2);
+    backdrop-filter: blur(25px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-headline{
+    margin-top: 9rem;
+}
+.hero-headline img{
+    height: 85px;
+}
+.hero-body{
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #FFA01B;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.get-started{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.get-started-text{
+    font-family: "Outfit", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #190801;
+    margin-top: 4rem;
+}
+.std-drp-dn-btn{
+    margin-top: 1.5rem;
+    appearance: none;
+    padding: 0.5rem;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FFA01B;
+    background-color: #190801;
+    width: 188px;
+    height: 58.3px;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 0.25rem solid transparent;
+    transition: all 0.35s ease;
+}
+.std-drp-dn-btn div{
+    padding-left: 1rem;
+}
+.std-drp-dn-btn img{
+    padding-left: 1rem;
+    margin-top: 0.1rem;
+}
+
+.std-drp-dn-btn:hover{
+    border: 0.25rem solid #FFA01B;
+}
+.std-drp-dn-btn img:hover{
+    transform: scale(1.1);
+    transition: all 0.15s;
+}
+
+/* About Us */
+.about-us img{
+    margin: 12rem 4rem 4rem 5rem;
+}
+.about-us-content{
+    margin-left: 5rem;
+    width: 800px;
+    text-align: justify;
+}
+.about-us-content div{
+    margin-bottom: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+.about-us-content div span{
+    font-weight: 600;
+}
+#pt1{
+    margin-bottom: 0px;
+}
+.about-us-content-points{
+}
+.about-us-content-text{
+    margin-left: 5rem;
+    width: 800px;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+.about-us-content ul{
+    margin-left: 3rem;
+}
+.about-us-content ul li div{
+    margin-left: 1rem;
+}
+.about-us-mission{
+    margin-left: 5rem;
+    /* width: 800px; */
+    text-align: left;
+    margin-bottom: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+.about-us-mission span{
+    font-weight: 600;
+}
+.about-us-mission-txt1{
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+.about-us-mission-txt2{
+    font-weight: 600;
+}
+
+/* Meet our team*/
+.meet-our-team{
+    margin: 10rem 4rem 4rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.team-member-cards{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    row-gap: 0rem;
+}
+
+.card{
+    width: 444px; 
+    height: 720px; 
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.35s ease-in-out;
+}
+
+.photo-section{
+    width: 300px; 
+    height: 324px; 
+    margin-bottom: -4.8rem; 
+    z-index: 10;
+    border-radius: 30px;
+    border: 0.35rem solid transparent;
+    transition: all 0.15s ease-in-out;
+    
+}
+.card:hover .photo-section{
+    border: 0.35rem solid #FFA01B;
+
+}
+
+.details-section{
+    width: 444px; 
+    height: 498px;
+    background-color: #190801;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.details-section img{
+    margin-top: 6rem;
+    width: 280px; 
+    align-self: center;
+}
+.details-section-sub-heading{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #FFA01B;
+    align-self: center;
+    margin-top: 1rem;
+}
+.details-section-content{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    align-self: center;
+    text-align: justify;
+    -webkit-hyphens: auto; 
+    -ms-hyphens: auto;     
+    hyphens: auto;
+    width: 80%;
+    margin-top: 2rem;
+}
+.linkedin-btn{
+    align-self: center;
+    transform: scale(0.9);
+}
+.linkedin-btn img{
+    margin-top: 1.75rem;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+.linkedin-btn img:hover {
+    transform: scale(1.05);
+}
+#vyshnav-content{
+    margin-top: 1rem;
+}
+#vyshnav-linkedin{
+    margin-top: 1.06rem;
+}
+#hrishikesh-name{
+    transform: scale(1.4);
+    margin-top: 7rem;
+    margin-bottom: 0.9rem;
+}
+#john-name{
+    transform: scale(1.5);
+    margin-top: 7.5rem;
+    margin-bottom: 1rem;
+}
+#john-content{
+    /* margin-top: 1rem; */
+    width: 85%;
+}
+#john-linkedin{
+    /* margin-top: 1.75rem; */
+}
+#abhijith-name{
+    transform: scale(0.8);
+    margin-bottom: -0.2rem;
+}
+#akash-name{
+    margin-top: 7rem;
+    transform: scale(1.1);
+    margin-bottom: 0.7rem;
+}
