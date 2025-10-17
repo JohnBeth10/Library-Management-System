@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archiviox</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="logo">
+            <div class="logo-icon">⎕</div>
+            <span class="logo-text">Archiviox</span>
+        </div>
+        <nav class="nav">
+            <a href="#favourites" class="nav-link">Favourites</a>
+            <a href="#library" class="nav-link">My Library</a>
+            <a href="#logout" class="nav-link">Log out</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Library Background -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="library-shelf library-shelf-left"></div>
+        <div class="library-shelf library-shelf-right"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome, First-Name!</h1>
+            <p class="hero-subtitle">Access your favourites, track your books, and<br>explore new titles</p>
+            <a href="#explore" class="btn-explore">Explore Books</a>
+        </div>
+    </section>
+
+    <!-- Explore Books Section -->
+    <section class="explore-section" id="explore">
+        <h2 class="explore-title">Explore Books</h2>
+        <div class="departments-container">
+            <div class="department-card">
+                <span class="department-name">Computer Science and Engineering Dept. (CS and CU)</span>
+                <button class="expand-btn" aria-label="Expand">+</button>
+            </div>
+            <div class="department-card">
+                <span class="department-name">Electrical Engineering Dept (EEE)</span>
+                <button class="expand-btn" aria-label="Expand">+</button>
+            </div>
+            <div class="department-card">
+                <span class="department-name">Electronics and Communication Engineering Dept (ECE, EV)</span>
+                <button class="expand-btn" aria-label="Expand">+</button>
+            </div>
+            <div class="department-card">
+                <span class="department-name">Mechanical Engineering Dept. (Mech.)</span>
+                <button class="expand-btn" aria-label="Expand">+</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="footer-logo-icon">⎕</div>
+                <span class="footer-logo-text">Archiviox</span>
+            </div>
+            <nav class="footer-nav">
+                <a href="#about" class="footer-link">About</a>
+                <a href="#team" class="footer-link">Our Team</a>
+                <a href="#help" class="footer-link">Help</a>
+                <a href="#contact" class="footer-link">Contact</a>
+            </nav>
+        </div>
+        <div class="copyright">
+            Copyright © 2028 | All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
