@@ -6,6 +6,7 @@ body{
     background-image: url(/Assets/Design\ -\ home-page.png);
     background-size: cover;
     background-position: center center;
+
 }
 
 /* nav bar */
@@ -67,10 +68,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    margin-top: 0rem;
 
 }
-.team-member-cards{
+.books-cards{
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -79,76 +81,162 @@ body{
     row-gap: 0rem;
 }
 
-.card{
-    width: 444px; 
-    height: 720px; 
-    margin-top: 10rem;
+.card {
+    position: relative;
+    background-color: #190801;
+    width: 537px;
+    height: 1100px;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.35s ease-in-out;
+    align-items: center; /* Center everything horizontally */
+    /* Distribute the items vertically */
+    justify-content: space-between; 
+    padding: 2rem 0; /* Add some vertical padding */
+    margin-top: 10rem;
+    box-sizing: border-box; /* Ensures padding is included in the height */
 }
 
+.card:hover .photo-section img{
+    border: 0.35rem solid #FFA01B;
+    
+}
+
+.details-section{
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.text-name{
+    position: absolute;
+    top: 2rem;
+    /* width: 80%; */
+    font-size: 39px;
+    line-height: 47px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #FFA01B;
+    align-self: center;
+    /* margin-top: -16rem; */
+    text-align: center;
+
+}
+.details-edition{
+    position: absolute;
+    top: 8rem;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: #FFA01B;
+    align-self: center;
+    /* margin-top: 0.5rem; */
+}
+.details-author{
+    position: absolute;
+    top: 11.5rem;
+    z-index: 10;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    align-self: center;
+    text-align: center;
+    width: 80%;
+    /* margin-top: 1rem; */
+}
 .photo-section{
-    width: 300px; 
-    height: 324px; 
-    margin-bottom: -4.8rem; 
+    position: absolute;
+    top: 15rem;
+    width: 447px; 
+    height: 596px; 
+    /* margin-bottom: -10rem;  */
     z-index: 10;
     border-radius: 30px;
     border: 0.35rem solid transparent;
     transition: all 0.15s ease-in-out;
     
 }
-.card:hover .photo-section{
-    border: 0.35rem solid #FFA01B;
-
-}
-
-.details-section{
-    width: 444px; 
-    height: 498px;
-    background-color: #190801;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-}
-
 .photo-section img{
+    position: absolute;
+    top: 1.5rem;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 30px;
+    /* margin-top: -3.5rem; */
+    border: 0.35rem solid transparent;
 }
 
-.text-name{
-    font-size: 36px;
-    font-weight: 700;
-    font-family: "Poppins", sans-serif;
-    color: #FFA01B;
-    align-self: center;
-    margin-top: 5rem;
-    text-align: center;
+/* This is our new container */
+.bottom-section {
+    position: absolute;
+    bottom: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* Adds space between ratings, status, and button */
+    z-index: 20;
+}
 
+.ratings {
+    position: static; 
+    transform: scale(1.2);
+    display: flex;
+    align-items: center; /* Vertically align stars and text */
+    flex-direction: row;
+    gap: 1rem; /* Space between stars and text */
 }
-.details-section-sub-heading{
-    font-size: 24px;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-    color: #FFA01B;
-    align-self: center;
-    margin-top: 2rem;
-}
-.details-section-content{
-    font-size: 20px;
-    font-weight: 400;
-    font-family: "Poppins", sans-serif;
+
+.ratings div {
     color: white;
-    align-self: center;
-    text-align: justify;
-    -webkit-hyphens: auto; 
-    -ms-hyphens: auto;     
-    hyphens: auto;
-    width: 80%;
-    margin-top: 2.8rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.status {
+    position: static; /* Resets positioning */
+    transform: none; /* Remove previous transform */
+    color: #ff1b1b;
+    font-family: "Outfit", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+}
+.status-notify{
+    display: flex;
+    flex-direction: column;
+}
+
+.std-drp-dn-btn{
+    margin-bottom: 1.5rem;
+    appearance: none;
+    padding: 0.5rem;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #190801;
+    background-color: #FFA01B;
+    width: 188px;
+    height: 58.3px;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 0.25rem solid transparent;
+    transition: all 0.35s ease;
+}
+.std-drp-dn-btn div{
+    padding-left: 1rem;
+}
+.std-drp-dn-btn:hover{
+    border: 0.25rem solid green;
+}
+.std-drp-dn-btn.clicked {
+    background-color: #28a745; /* A nice shade of green */
+    color: white; /* Change text to white for contrast */
 }
