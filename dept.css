@@ -157,9 +157,10 @@ body {
 .hero-content {
     display: flex;
     flex-direction: column;
-    background: rgba(74, 47, 35, 0.92);
-    backdrop-filter: blur(8px);
-    padding: 65px 90px;
+    background-color: rgba(255, 255, 255,0.1);
+    border: 1px solid rgba(255, 255, 255,0.2);
+    backdrop-filter: blur(25px);
+    padding: 90px 150px;
     border-radius: 12px;
     text-align: center;
     max-width: 650px;
